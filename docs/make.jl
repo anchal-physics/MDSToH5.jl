@@ -9,9 +9,9 @@ makedocs(;
 )
 
 deploydocs(;
-    repo="github.com/ProjectTorreyPines/MDSh5.jl.git",
+    repo="github.com/anchal-physics/MDSh5.jl.git",
     target="build",
     branch="gh-pages",
-    devbranch="master",
+    devbranch="main",
     versions=["stable" => "v^", "v#.#"],
 )
