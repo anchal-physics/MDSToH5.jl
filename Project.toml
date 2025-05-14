@@ -1,0 +1,19 @@
+name = "MDSh5"
+uuid = "d26121ab-931e-479e-b928-38e5e8d76109"
+authors = ["Anchal Gupta <guptaa@fusion.gat.com>"]
+version = "0.1.0"
+
+[deps]
+PythonCall = "6099a3de-0909-46bc-b1f4-468b9a2dfc0d"
+
+[compat]
+PythonCall = "0.9"
+SHA = "0.7"
+Test = "1.11"
+
+[extras]
+SHA = "ea8e919c-243c-51af-8825-aaa63cd721ce"
+Test = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
+
+[targets]
+test = ["SHA", "Test"]
