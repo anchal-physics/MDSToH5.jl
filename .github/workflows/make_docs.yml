@@ -17,6 +17,24 @@ on:
     
 jobs:
   make_docs:
-    uses: ProjectTorreyPines/GitHubActionsWorkflows/.github/workflows/make_docs.yml@master
-    with:
-      use_FuseRegistry: false
+    name: Documentation
+    permissions:
+      actions: write
+      contents: write
+      statuses: write
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        julia-version: [1.x]
+        julia-arch: [x64]
+        os: [ubuntu-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: julia-actions/setup-julia@latest
+      - uses: julia-actions/cache@v2
+      - name: Install dependencies, build and deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DOCUMENTER_KEY: ${{ secrets.DOCUMENTER_KEY }}
+        run: |
+          julia --project=docs/ -e 'using Pkg; Pkg.develop(PackageSpec(path=pwd())); Pkg.instantiate()'; julia --project=docs/ docs/make.jl

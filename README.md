@@ -13,3 +13,7 @@ Julia version of [mdsh5 python package](https://pypi.org/project/mdsh5/) that us
 using Pkg
 Pkg.add("MDSh5)
 ```
+
+## Documentation
+
+For installation and usage instructions, see the [online documentation](https://anchal-physics.github.io/MDSh5.jl/stable). For documentation on under development branch, see [dev online documentation](https://anchal-physics.github.io/MDSh5.jl/dev)
