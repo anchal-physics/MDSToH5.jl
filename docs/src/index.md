@@ -20,3 +20,5 @@ Pkg.add("MDSh5)
 ```@docs
 read_mds
 ```
+
+It is most convinient to call this function through a YAML config file. Check out the exmaples in [config_examples](https://github.com/anchal-physics/MDSToH5.jl/tree/main/config_examples) directory.
