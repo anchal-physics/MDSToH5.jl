@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><title>MDSh5.jl · MDSh5</title><meta name="title" content="MDSh5.jl · MDSh5"/><meta property="og:title" content="MDSh5.jl · MDSh5"/><meta property="twitter:title" content="MDSh5.jl · MDSh5"/><meta name="description" content="Documentation for MDSh5."/><meta property="og:description" content="Documentation for MDSh5."/><meta property="twitter:description" content="Documentation for MDSh5."/><script data-outdated-warner src="assets/warner.js"></script><link href="https://cdnjs.cloudflare.com/ajax/libs/lato-font/3.0.0/css/lato-font.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/juliamono/0.050/juliamono.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet" type="text/css"/><link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.8/katex.min.css" rel="stylesheet" type="text/css"/><script>documenterBaseURL="."</script><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js" data-main="assets/documenter.js"></script><script src="search_index.js"></script><script src="siteinfo.js"></script><script src="../versions.js"></script><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-mocha.css" data-theme-name="catppuccin-mocha"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-macchiato.css" data-theme-name="catppuccin-macchiato"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-frappe.css" data-theme-name="catppuccin-frappe"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/catppuccin-latte.css" data-theme-name="catppuccin-latte"/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-dark.css" data-theme-name="documenter-dark" data-theme-primary-dark/><link class="docs-theme-link" rel="stylesheet" type="text/css" href="assets/themes/documenter-light.css" data-theme-name="documenter-light" data-theme-primary/><script src="assets/themeswap.js"></script></head><body><div id="documenter"><nav class="docs-sidebar"><div class="docs-package-name"><span class="docs-autofit"><a href>MDSh5</a></span></div><button class="docs-search-query input is-rounded is-small is-clickable my-2 mx-auto py-1 px-2" id="documenter-search-query">Search docs (Ctrl + /)</button><ul class="docs-menu"><li class="is-active"><a class="tocitem" href>MDSh5.jl</a><ul class="internal"><li><a class="tocitem" href="#Installation"><span>Installation</span></a></li><li><a class="tocitem" href="#Usage"><span>Usage</span></a></li></ul></li></ul><div class="docs-version-selector field has-addons"><div class="control"><span class="docs-label button is-static is-size-7">Version</span></div><div class="docs-selector control is-expanded"><div class="select is-fullwidth is-size-7"><select id="documenter-version-selector"></select></div></div></div></nav><div class="docs-main"><header class="docs-navbar"><a class="docs-sidebar-button docs-navbar-link fa-solid fa-bars is-hidden-desktop" id="documenter-sidebar-button" href="#"></a><nav class="breadcrumb"><ul class="is-hidden-mobile"><li class="is-active"><a href>MDSh5.jl</a></li></ul><ul class="is-hidden-tablet"><li class="is-active"><a href>MDSh5.jl</a></li></ul></nav><div class="docs-right"><a class="docs-navbar-link" href="https://github.com/anchal-physics/MDSh5.jl" title="View the repository on GitHub"><span class="docs-icon fa-brands"></span><span class="docs-label is-hidden-touch">GitHub</span></a><a class="docs-navbar-link" href="https://github.com/anchal-physics/MDSh5.jl/blob/main/docs/src/index.md" title="Edit source on GitHub"><span class="docs-icon fa-solid"></span></a><a class="docs-settings-button docs-navbar-link fa-solid fa-gear" id="documenter-settings-button" href="#" title="Settings"></a><a class="docs-article-toggle-button fa-solid fa-chevron-up" id="documenter-article-toggle-button" href="javascript:;" title="Collapse all docstrings"></a></div></header><article class="content" id="documenter-page"><h1 id="MDSh5.jl"><a class="docs-heading-anchor" href="#MDSh5.jl">MDSh5.jl</a><a id="MDSh5.jl-1"></a><a class="docs-heading-anchor-permalink" href="#MDSh5.jl" title="Permalink"></a></h1><ul><li><a href="#MDSh5.jl">MDSh5.jl</a></li><li class="no-marker"><ul><li><a href="#Installation">Installation</a></li><li><a href="#Usage">Usage</a></li></ul></li></ul><h2 id="Installation"><a class="docs-heading-anchor" href="#Installation">Installation</a><a id="Installation-1"></a><a class="docs-heading-anchor-permalink" href="#Installation" title="Permalink"></a></h2><p>For installation:</p><pre><code class="nohighlight hljs">using Pkg
+Pkg.add(&quot;MDSh5)</code></pre><h2 id="Usage"><a class="docs-heading-anchor" href="#Usage">Usage</a><a id="Usage-1"></a><a class="docs-heading-anchor-permalink" href="#Usage" title="Permalink"></a></h2><article class="docstring"><header><a class="docstring-article-toggle-button fa-solid fa-chevron-down" href="javascript:;" title="Collapse docstring"></a><a class="docstring-binding" id="MDSh5.read_mds" href="#MDSh5.read_mds"><code>MDSh5.read_mds</code></a> — <span class="docstring-category">Function</span><span class="is-flex-grow-1 docstring-article-toggle-button" title="Collapse docstring"></span></header><section><div><pre><code class="language-julia hljs">read_mds(;
+    shot_numbers::Union{Nothing, Int, String, Vector{T}}=nothing,
+    trees::Union{
+        Nothing,
+        String,
+        Vector{String},
+        Dict{String, Union{String, Vector{String}}},
+    }=nothing,
+    point_names::Union{Nothing, String, Vector{String}}=nothing,
+    server::Union{Nothing, String}=nothing,
+    proxy_server::Union{Nothing, String}=nothing,
+    resample::Union{Nothing, Tuple{Any}, Array{Any}, Dict{String, Float64}}=nothing,
+    rescale::Union{
+        Nothing,
+        Int,
+        Float64,
+        Vector{Int},
+        Vector{Float64},
+        Dict{String, Union{Int, Float64}},
+    }=nothing,
+    out_filename::Union{Nothing, String}=nothing,
+    reread_data::Bool=false,
+    force_full_data_read::Bool=false,
+    config::Union{Nothing, String, Dict{String, Any}}=nothing,
+    leave_shots_tqdm::Bool=true,
+) where {T &lt;: Union{Int64, String}}</code></pre><p>Read data from MDSPlus server for provided shot numbers, trees, and pointnames.</p><p>Input keyword arguments:</p><pre><code class="nohighlight hljs">shot_numbers: When String, the String is assumed to be in format:
+              &quot;&lt;start_shot_number&gt; to &lt;end_shot_number&gt;&quot; with to as the separator
+              word to give a range of shot numbers. Vector of mixed Int and String
+              can be provided.
+
+trees: If Vector then the length of this Vector should match length of Vector
+       provided to `pointnames` argument for one-to-one mapping. Alternatively,
+       this can be a Dict with tree name as keys and point names as values.
+
+point_names: If Vector, then the length of this Vector should match length of Vector
+             provided to `trees` arguments for one-to-one mapping.
+
+server: MDSPlus server in the format of username@ip_address:port . Note that it is
+        assumed that your ssh configuration/VPN is setup to directly access this
+        server in case any tunneling is required.
+
+proxy_server: Proxy server to use to tunnel through to the server. If
+              provided, the username part from server definition will be used to
+              ssh into the proxy server from where it assumed that you have access
+              to the MDSplus server. If the username for proxy-server is different,
+              add it as a prefix here with @. Default is Nothing.
+
+resample: If provided as Iterable, it should be in order start, stop, inc
+          recommended to use dictionary input to ensure correct mapping.
+          Dict structure
+          (start-&gt; start_time, stop-&gt; stop_time, increment-&gt; time_step)
+          This argument resampels the data for this regular time spacing.
+
+rescale: Used for rescaling time axis of data before resampling query (if any).
+         If Int or Float, same rescaling factor is applied across all `trees`.
+         If Vector, length of this Vector must be same as length of `trees` Vector
+                    for one to one mapping of rescaling factor to a particular tree.
+         If Dict, each tree would get it&#39;s own rescaling factor. If a tree is not
+                  present in this dictionary, rescaling factor will default to 1.
+        Resampling factor gets multiplied with stored MDSPlus time axis data, thus
+        for example, if time axis data for a tree is in ms, supply rescaling factor
+        of 1e-3 to convert the downloaded data in seconds and resample in units of
+        seconds.
+
+out_filename: If provided, downloaded data will be stored in this filename in
+              HDF5 format. Thus `.h5` extension should be provided.
+
+reread_data: If true, even if a pointname data is already present in `out_filename`,
+             it will be downloaded again and overwritten. Can be used if resample or
+             rescale is changed from previous download.
+
+force_full_data_read: If true, if resample attempt fails on a pointname,
+                      full data reading will be attempted without resampling. This
+                      is useful in cases where the pointname stores time dimension
+                      in other than dim0 data field.
+
+config: If String, the configuration file in YAML format would be read to create the
+        configuration dictionary. Use Dict if using in interactive mode.
+        Configuration dictionary can have any of the above arguments present in it.
+        Arguments provided by configuration dictionary are overridden by arguments
+        directly provided to the function.
+
+leave_shots_tqdm: If true, the progress bar about shots read will be left in the output.</code></pre></div><a class="docs-sourcelink" target="_blank" href="https://github.com/anchal-physics/MDSh5.jl/blob/4cc79836d7ba7b0ed011a67d07ba458b54763e77/src/MDSh5.jl#L7-L97">source</a></section></article><p>It is most convinient to call this function through a YAML config file. Check out the exmaples in <a href="https://github.com/anchal-physics/MDSToH5.jl/tree/main/config_examples">config_examples</a> directory.</p></article><nav class="docs-footer"><p class="footer-message">Powered by <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> and the <a href="https://julialang.org/">Julia Programming Language</a>.</p></nav></div><div class="modal" id="documenter-settings"><div class="modal-background"></div><div class="modal-card"><header class="modal-card-head"><p class="modal-card-title">Settings</p><button class="delete"></button></header><section class="modal-card-body"><p><label class="label">Theme</label><div class="select"><select id="documenter-themepicker"><option value="auto">Automatic (OS)</option><option value="documenter-light">documenter-light</option><option value="documenter-dark">documenter-dark</option><option value="catppuccin-latte">catppuccin-latte</option><option value="catppuccin-frappe">catppuccin-frappe</option><option value="catppuccin-macchiato">catppuccin-macchiato</option><option value="catppuccin-mocha">catppuccin-mocha</option></select></div></p><hr/><p>This document was generated with <a href="https://github.com/JuliaDocs/Documenter.jl">Documenter.jl</a> version 1.12.0 on <span class="colophon-date" title="Monday 16 June 2025 23:26">Monday 16 June 2025</span>. Using Julia version 1.11.5.</p></section><footer class="modal-card-foot"></footer></div></div></div></body></html>
